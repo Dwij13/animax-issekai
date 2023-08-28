@@ -110,7 +110,7 @@ footer {
 
 
 
-.flex-container{
+.flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +122,7 @@ footer {
 
 
 
-.movies{
+.movies {
     flex-wrap: wrap;
     margin: 3% 14%;
 }
@@ -133,7 +133,7 @@ footer {
 
 
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -144,25 +144,44 @@ footer {
 
 
 
-#scroll{
+#scroll {
     position: relative;
     animation: zoom 3s infinite;
 }
 
-@keyframes zoom{
-    0%{
+@keyframes zoom {
+    0% {
         top: 15px;
     }
-    100%{
+
+    100% {
         top: 100px;
     }
 }
+
 /* Iteration 5: Making webpage mobile responsive */
 @media only screen and (max-width:600px) {
-    .wrap-reverse{
+    .wrap-reverse {
         flex-wrap: wrap-reverse;
     }
-    .container{
+
+    .container {
         text-align: center;
     }
+
+    .button {
+        background-color: aqua;
+    }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .button {
+        background-color: rgb(255, 204, 0);
+    }
+}
+
+/* @media only screen and (min-width: 600px) and (max-width: 800px){
+    .button {
+        background-color: rgb(0, 255, 64);
+    }
+  } */
